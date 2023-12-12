@@ -1,0 +1,664 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins:wght@500&display=swap");
+:root {
+  --skill-color: orange;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #454545;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+.nav-bar nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  border: 1px solid #888888;
+  box-shadow: 1px 2px 10px 2px #888888;
+  width: 100%;
+}
+.suryanshu h1 {
+  background-image: linear-gradient(45deg, #0ef, red, green, lightblue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 800;
+  font-size: 45px;
+  padding: 15px;
+  animation: animateText 4s infinite;
+}
+.suryanshu h1:hover {
+  transition: 0.3s;
+  transform: rotate(360deg);
+}
+
+@keyframes animateText {
+  0% {
+    background-image: linear-gradient(45deg, #0ef, red, green);
+    color: transparent;
+    opacity: 0;
+  }
+  50% {
+    background-image: linear-gradient(45deg, #0ef, red, green);
+
+    color: transparent;
+    opacity: 1;
+  }
+  100% {
+    background-image: linear-gradient(45deg, #0ef, red, green);
+
+    color: transparent;
+    opacity: 0;
+  }
+}
+.menu-icon {
+  display: none;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul li a {
+  color: #0ef;
+  padding: 15px 0 15px 15px;
+  font-size: 25px;
+  margin-right: 15px;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+nav ul li {
+  list-style: none;
+  text-decoration: none;
+}
+nav ul li:hover {
+  color: #0ef;
+  padding-bottom: 5px;
+  border-bottom: 4px solid #0ef;
+  transition: 0.2s;
+  transform: scale(1.2);
+}
+section {
+  margin-top: 55px;
+}
+.home-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.image-container {
+  padding-left: 25px;
+}
+
+#my_fav_img {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  text-align: center;
+  border: 4px solid #0ef;
+  animation: imageBorder 4s infinite;
+}
+@keyframes imageBorder {
+  0% {
+    border: #0ef;
+    box-shadow: 0 0 20px #0ef;
+  }
+  50% {
+    border: #0ef;
+    box-shadow: 0 0 20px #0ef;
+  }
+  100% {
+    border: #0ef;
+    box-shadow: 0 0 20px #0ef;
+  }
+}
+.image-container img:hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+.intro h3 {
+  font-size: 18px;
+  color: #0ef;
+}
+.intro h1 {
+  font-size: 65px;
+  font-weight: 800;
+  padding: 5px;
+}
+.intro h1:hover {
+  transition: 0.2s;
+  transform: scale(1.03);
+}
+.intro h1 span {
+  color: red;
+}
+.intro h4 {
+  font-size: 45px;
+  color: orange;
+  font-family: "Agbalumo", sans-serif;
+}
+.intro p {
+  font-size: 22px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin: 5px;
+}
+.resume button {
+  background-color: brown;
+  color: white;
+  font-size: 32px;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 20px;
+  animation: imageBorder 4s infinite;
+}
+.resume button:hover {
+  background-color: rgb(101, 27, 27);
+}
+.links {
+  margin: 5px;
+}
+.links a {
+  font-size: 48px;
+  padding: 0px;
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+.links a:hover {
+  font-size: 55px;
+}
+@keyframes animateHeading {
+  0% {
+    color: #0ef;
+    opacity: 0;
+  }
+  50% {
+    color: #0ef;
+    opacity: 1;
+  }
+  100% {
+    color: #0ef;
+    opacity: 0;
+  }
+}
+.heading h1 {
+  color: #0ef;
+  font-size: 56px;
+  text-align: center;
+  padding: 15px;
+  margin: 25px;
+  animation: animateHeading 4s infinite;
+}
+
+.about-intro {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  column-gap: 30vh;
+}
+.about-img {
+  padding-top: 4rem;
+}
+.about-intro img {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: 4px solid #0ef;
+  animation: imageBorder 4s infinite;
+  margin-top: 10vh;
+}
+.about-intro img:hover {
+  transition: 0.6s;
+  transform: scale(1.1);
+}
+.item-1 {
+  text-align: center;
+}
+#about-me {
+  width: 100%;
+  margin-left: 10px;
+  text-align: center;
+}
+.about-para p {
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.4em;
+  gap: 4px;
+  margin: 55px;
+  animation: imageBorder 4s infinite;
+  padding: 25px;
+  text-indent: 40px;
+}
+.about-para p:hover {
+  transition: 0.3s;
+  transform: scale(1.09);
+  font-weight: 500;
+}
+.about-para p span {
+  font-weight: 800;
+  color: rgb(200, 159, 159);
+}
+.education {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: 30px;
+  padding-right: 25px;
+}
+.paper {
+  background-color: white;
+  color: black;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+  border: 1px solid;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px;
+  width: 100%;
+  height: auto;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  animation: imageBorder 4s infinite;
+}
+.paper h3 {
+  font-size: 24px;
+  font-weight: 900;
+}
+.paper p {
+  font-size: 18px;
+  padding: 12px;
+}
+.paper span {
+  color: red;
+  padding: 10px;
+}
+.paper:hover {
+  transition: 0.4s;
+  transform: scale(1.15);
+}
+.heading::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 6px;
+  background-color: orange;
+  color: orange;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+.technology-known {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+  place-items: center;
+  text-align: center;
+}
+.skills {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  animation: imageBorder 4s infinite;
+  text-align: center;
+  width: auto;
+  background-color: transparent;
+  padding: 45px;
+}
+.skill-heading h3 {
+  font-size: 35px;
+  font-weight: 600;
+  padding: 10px;
+}
+.language-contents {
+  width: 80%;
+  align-items: center;
+}
+.skill-container p {
+  font-size: 25px;
+  text-align: left;
+  padding: 5px;
+}
+.skill-box {
+  height: 10px;
+  width: 100%;
+  border: 1px solid transparent;
+  text-align: center;
+  background-color: grey;
+  border-radius: 10px;
+}
+.html-skill {
+  width: 80%;
+  background-color: var(--skill-color);
+  height: 10px;
+  border-radius: 10px;
+}
+.css-skill {
+  width: 40%;
+  height: 10px;
+  background-color: var(--skill-color);
+  text-align: center;
+  border-radius: 10px;
+}
+.js-skill {
+  width: 58%;
+  height: 10px;
+  background-color: var(--skill-color);
+  text-align: center;
+  border-radius: 10px;
+}
+.c-skill {
+  width: 50%;
+  height: 10px;
+  background-color: var(--skill-color);
+  text-align: center;
+  border-radius: 10px;
+}
+.cpp-skill {
+  width: 90%;
+  height: 10px;
+  background-color: var(--skill-color);
+  text-align: center;
+  border-radius: 10px;
+}
+.react-skill {
+  width: 30%;
+  height: 10px;
+  background-color: var(--skill-color);
+  text-align: center;
+  border-radius: 10px;
+}
+.bootstrap-skill {
+  width: 40%;
+  height: 10px;
+  background-color: pink;
+  text-align: center;
+  border-radius: 10px;
+}
+.native-skill {
+  width: 5%;
+  height: 10px;
+  background-color: green;
+  text-align: center;
+  border-radius: 10px;
+}
+.node-skill {
+  width: 2%;
+  height: 10px;
+  background-color: salmon;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.collection {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  row-gap: 100px;
+  column-gap: 50px;
+}
+.card {
+  height: auto;
+  width: 100%;
+  background: transparent;
+  border-radius: 12px;
+  border: 1px solid;
+  padding: 20px;
+  animation: imageBorder 4s infinite;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+.card img {
+  width: auto;
+  height: 240px;
+  text-align: center;
+}
+.card img:hover {
+  transition: 0.4s;
+  transform: translateY(-130px) scale(1.4);
+  width: 100%;
+  height: 100%;
+}
+.card button {
+  background-color: brown;
+  color: white;
+  font-size: 32px;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 30px;
+  animation: imageBorder 4s infinite;
+}
+.card button:hover {
+  background-color: rgb(101, 27, 27);
+}
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  row-gap: 100px;
+  column-gap: 50px;
+  padding-right: 25px;
+}
+.service-item {
+  height: auto;
+  width: 100%;
+  background-color: white;
+  border-radius: 12px;
+  border: 1px solid;
+  padding: 20px;
+  animation: imageBorder 4s infinite;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: black;
+}
+.service-item i {
+  padding: 10px;
+}
+.service-item h2 {
+  font-size: 28px;
+  font-weight: 900;
+  padding: 15px;
+}
+.service-item p {
+  font-size: 18px;
+  text-align: center;
+}
+.service-item:first-child:hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+  background-color: cadetblue;
+  color: white;
+}
+.service-item:nth-child(2):hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+  background-color: chocolate;
+  color: white;
+}
+.service-item:nth-child(3):hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+  background-color: darkseagreen;
+  color: white;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 80px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.project-item {
+  text-align: center;
+  background-color: transparent;
+  color: white;
+  height: auto;
+  width: 420px;
+  border-radius: 12px;
+  border: 1px solid;
+  padding: 20px;
+  animation: imageBorder 4s infinite;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+}
+.project-title h1 {
+  font-size: 30px;
+  padding: 10px;
+  color: orange;
+}
+
+.project-image {
+  text-align: center;
+}
+.project-image img {
+  width: 100%;
+  height: 200px;
+}
+.detail-btn {
+  padding-top: 28px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.detail-btn .show-detail {
+  text-align: center;
+  font-size: 25px;
+  padding: 4px;
+  background-color: brown;
+  color: white;
+  border-radius: 12px;
+}
+.detail-btn .show-detail:hover {
+  background-color: darkred;
+}
+.detail-btn .show-project {
+  background: transparent;
+  color: white;
+  font-size: 18px;
+  border: none;
+}
+.detail-btn .show-project:hover {
+  color: #0ef;
+  border: 2px solid;
+  border-radius: 12px;
+}
+.fa-html5 {
+  color: #e34f26;
+  font-size: 8px;
+}
+.fa-css3 {
+  color: #1572b6;
+  font-size: 8px;
+}
+.fa-js {
+  color: #f0db4f; /* JavaScript yellow color */
+  font-size: 8px; /* Adjust font size as needed */
+}
+.fa-code {
+  font-size: 8px;
+  color: #f7df1e;
+}
+.button #email-btn {
+  background-color: brown;
+  color: white;
+  font-size: 32px;
+  padding: 10px;
+  border-radius: 15px;
+  animation: imageBorder 4s infinite;
+  text-decoration: none;
+}
+.button #email-btn:hover {
+  background-color: rgb(101, 27, 27);
+}
+.contact-contents .button {
+  margin: 25px;
+  padding: 25px;
+  text-align: center;
+}
+.social-media {
+  text-align: center;
+  font-size: 26px;
+  color: black;
+}
+
+.fa-facebook {
+  color: #1877f2; /* Facebook blue */
+  border-radius: 50%;
+}
+.fa-instagram {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.fa-twitter {
+  color: #1da1f2; /* Twitter blue */
+}
+.fa-linkedin {
+  color: #0077b5; /* LinkedIn blue */
+}
+
+/* Style for the GitHub icon */
+.fa-github {
+  color: #333; /* GitHub black */
+}
+i {
+  margin: 15px;
+  padding: 15px;
+  border-radius: 50%;
+  border: 4px solid #0ef;
+  animation: imageBorder 4s infinite;
+}
+i:hover {
+  transition: 0.6s;
+  transform: scale(1.3) rotate(360deg);
+}
+.contact-contents .sentence {
+  margin: 25px;
+  text-align: center;
+}
+.contact-contents .sentence h4 {
+  font-size: 35px;
+  color: orange;
+  font-weight: 600;
+  font-family: "Agbalumo", sans-serif;
+}
+.footer footer {
+  background-color: black;
+  color: white;
+  box-shadow: 1px 2px 10px 2px #888888;
+}
+.footer footer p {
+  font-size: 26px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding: 25px;
+}
+.home-icon {
+  color: #007bff;
+}
+#hire {
+  font-size: 45px;
+  color: orange;
+  font-family: "Agbalumo", sans-serif;
+  text-align: center;
+}
